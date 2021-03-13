@@ -42,5 +42,5 @@ public class DaftarMenu {
         getMenuByKategori("Toping");
         getMenuByKategori("Minuman");
     }
-    
+   
 }

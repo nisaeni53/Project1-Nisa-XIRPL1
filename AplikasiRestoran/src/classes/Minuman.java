@@ -10,6 +10,7 @@ package classes;
  * @author DELL LATITUDE E6430s
  */
 public class Minuman extends Menu {
+    
     public Minuman(String nama_minuman, double harga) {
         setNama_menu(nama_minuman);
         setHarga(harga);
