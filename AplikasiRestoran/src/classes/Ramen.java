@@ -10,6 +10,8 @@ package classes;
  * @author DELL LATITUDE E6430s
  */
 public class Ramen extends Menu{
+    
+    //parameter nsma_ramen diganti menjadi nama_ramen (typo)
     public Ramen(String nama_ramen, double harga) {
         setNama_menu (nama_ramen);
         setHarga (harga);

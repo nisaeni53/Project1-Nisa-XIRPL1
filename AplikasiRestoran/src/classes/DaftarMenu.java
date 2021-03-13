@@ -14,8 +14,12 @@ import java.util.ArrayList;
 public class DaftarMenu {
 
     private ArrayList<Menu> daftarmenu;
-    public DaftarMenu(){}
-    public void tambahMenu (Menu menu) {}
+    public DaftarMenu(){
+        daftarmenu =new ArrayList<>();
+    }
+    public void tambahMenu (Menu menu) {
+        daftarmenu.add(menu);
+    }
     public void getMenuByKategori(String kategori){}
     public void tampilDaftarMenu() {}
     

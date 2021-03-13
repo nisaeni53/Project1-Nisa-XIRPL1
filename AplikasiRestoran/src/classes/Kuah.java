@@ -10,6 +10,7 @@ package classes;
  * @author DELL LATITUDE E6430s
  */
 public class Kuah extends Menu {
+    
     public Kuah (String nama_kuah) {
         setNama_menu(nama_kuah);
         setHarga(0);
