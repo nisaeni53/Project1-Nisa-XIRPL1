@@ -10,6 +10,7 @@ import classes.Kuah;
 import classes.Minuman;
 import classes.Ramen;
 import classes.Toping;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -38,6 +39,23 @@ public class MainAplikasiKasir {
     MainAplikasiKasir app = new MainAplikasiKasir();
     //tampilan daftar menu
     app.generateDaftarMenu();
+    //mulai transaksi
+    System.out.println("======== TRANSAKSI ========");
+    
+    //ambil data transaksi
+    System.out.print("No Transaksi : ");
+    no_transaksi = input.next();
+    System.out.print("Pemesanan : ");
+    nama_pemesan = input.next();
+    System.out.print("Tanggal : [dd-mm-yyyy] ");
+    tanggal = input.next();
+    System.out.print("Makan Ditempat? [Y/N] : ");
+    makan_ditempat = input.next();
+    
+    if (makan_ditempat.equalsIgnoreCase("Y")) {
+        System.out.print("Nomor Meja : ");
+        no_meja = input.next();
+    }
     }
     
     public void generateDaftarMenu(){
