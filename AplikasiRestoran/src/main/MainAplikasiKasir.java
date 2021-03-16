@@ -17,16 +17,28 @@ import java.util.Scanner;
  * @author DELL LATITUDE E6430s
  */
 public class MainAplikasiKasir {
+    
+    public DaftarMenu daftarmenu;
+    //Tambahkan 
+    public static double PAJAK_PPN = 0.10;
+    public static double BIAYA_SERVICE = 0.05;
+    //End Of Tambahkan
+    
     public static void main(String[] args){
     //inisialisasi kelas Scanner untuk mengambil
     //input dari keyboars
-    Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        //Tambahkan
+        String no_transaksi, nama_pemesan, tanggal, no_meja = "";
+        String transaksi_lagi = "", keterangan = "", makan_ditempat;
+        int jumlah_pesanan, no_menu;
+        //End Of Tambahkan
+    
     
     MainAplikasiKasir app = new MainAplikasiKasir();
     //tampilan daftar menu
     app.generateDaftarMenu();
     }
-    public DaftarMenu daftarmenu;
     
     public void generateDaftarMenu(){
         daftarmenu = new DaftarMenu();
